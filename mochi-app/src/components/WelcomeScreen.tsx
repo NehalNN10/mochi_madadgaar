@@ -9,7 +9,7 @@ export function WelcomeScreen({ onContinue }: WelcomeScreenProps) {
         <h1 className="text-gray-800 mb-6 text-5xl">
           موچی مددگار
         </h1>
-        <p className="text-gray-500 text-2xl leading-relaxed">
+        <p id="welcome-subheading" className="text-gray-500 text-2xl leading-relaxed">
           آپ کے کاروبار کا ڈیجیٹل مددگار
         </p>
       </div>

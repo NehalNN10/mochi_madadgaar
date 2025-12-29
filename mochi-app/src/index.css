@@ -1,3 +1,6 @@
+/* importing Urdu Nastaliq font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -130,6 +133,10 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -139,7 +146,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+  :where(:not(:has([class*='text-']), :not(:has([class^='text-'])))) {
     h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
@@ -192,4 +199,28 @@
 
 html {
   font-size: var(--font-size);
+}
+
+@layer components {
+  button {
+    font-family: "Noto Nastaliq Urdu", serif;
+    background-color: #2a2a40;
+    color: white;
+    width: 70%;
+    border-radius: 20px;
+    padding: 7% 0;
+    margin-top: 10%;
+    font-size: 20px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-family: "Noto Nastaliq Urdu", serif;
+  }
+}
+
+#welcome-subheading
+{
+  color: #6b7280
 }
