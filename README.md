@@ -1,4 +1,4 @@
-# Mochi Madadgaar
+# Mochi Madadgaar - making business easier for your local cobbler
 
 ### Nehal Naeem Haji, Eman Fatima
 
